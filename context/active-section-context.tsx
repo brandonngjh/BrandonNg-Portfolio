@@ -40,7 +40,7 @@ export default ActiveSectionContextProvider;
 export function useActiveSectionContext() {
   const context = React.useContext(ActiveSectionContext);
 
-  if (context === null) {
+  if (!context) {
     throw new Error(
       "useActiveSection must be used within a ActiveSectionContextProvider"
     );
