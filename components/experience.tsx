@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useCallback } from "react";
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
@@ -12,10 +12,23 @@ import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 
 const Experience = () => {
-  const { ref, inView } = useInView({ triggerOnce: true });
+  const { ref: inViewRef, inView } = useInView({ triggerOnce: true });
+  const { ref: sectionRef } = useSectionInView("Experience");
+
+  const setRefs = useCallback(
+    (node: Element | null | undefined) => {
+      inViewRef(node);
+      sectionRef(node);
+    },
+    [inViewRef, sectionRef]
+  );
 
   return (
-    <section ref={ref} id="experience">
+    <section
+      ref={setRefs}
+      id="experience"
+      className="scroll-mt-28 mb-28 sm:mb-40"
+    >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
