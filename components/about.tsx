@@ -19,7 +19,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I’m a{" "}
+        I&#39;m a{" "}
         <span className="font-medium">Year 3 Computer Science student</span> at
         the Singapore University of Technology and Design (SUTD) and aspiring{" "}
         <span className="font-medium">full-stack engineer</span>, with an
@@ -33,7 +33,7 @@ export default function About() {
       <p className="mb-3">
         Passionate about solving complex problems and building scalable
         solutions, I am always eager to learn and experiment with new
-        technologies. I've worked with various{" "}
+        technologies. I&#39;ve worked with various{" "}
         <span className="font-medium">tech stacks</span> and{" "}
         <span className="font-medium">database systems</span> to continuously
         improve my skills.
@@ -43,7 +43,7 @@ export default function About() {
         Outside of coding, I stay active through{" "}
         <span className="font-medium">football</span>,{" "}
         <span className="font-medium">gymming</span>, and{" "}
-        <span className="font-medium">dancing</span>, and I’m always eager to
+        <span className="font-medium">dancing</span>, and I&#39;m always eager to
         try new sports and activities.
       </p>
     </motion.section>
