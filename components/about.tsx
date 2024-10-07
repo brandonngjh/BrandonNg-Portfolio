@@ -19,30 +19,32 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        I’m a{" "}
+        <span className="font-medium">Year 3 Computer Science student</span> at
+        the Singapore University of Technology and Design (SUTD) and aspiring{" "}
+        <span className="font-medium">full-stack engineer</span>, with an
+        inclination toward{" "}
+        <span className="font-medium">backend development</span>. While
+        backend systems are my primary focus, I also develop my{" "}
+        <span className="font-medium">frontend skills</span> and build a strong
+        foundation in <span className="font-medium">computer systems</span>.
       </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+      <p className="mb-3">
+        Passionate about solving complex problems and building scalable
+        solutions, I am always eager to learn and experiment with new
+        technologies. I've worked with various{" "}
+        <span className="font-medium">tech stacks</span> and{" "}
+        <span className="font-medium">database systems</span> to continuously
+        improve my skills.
+      </p>
+
+      <p className="mb-3">
+        Outside of coding, I stay active through{" "}
+        <span className="font-medium">football</span>,{" "}
+        <span className="font-medium">gymming</span>, and{" "}
+        <span className="font-medium">dancing</span>, and I’m always eager to
+        try new sports and activities.
       </p>
     </motion.section>
   );

@@ -5,6 +5,12 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import codeToImpactImg from "@/public/codeToImpact.png";
+import hrAppImg from "@/public/hrApp.png";
+import bulkifyImg from "@/public/bulkify.png";
+import fpgaGameImg from "@/public/fpgaGame.png";
+import azendianLogo from "@/public/azendianLogo.png"
+import stickEmLogo from "@/public/stickEmLogo.png"
 
 export const links = [
   {
@@ -33,75 +39,68 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const projectsData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "GIC CODETOIMPACT Hackathon 2024",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "Full-stack MERN app with real-time data updates and concurrent processing. Deployed on AWS using Docker and GitHub Actions.",
+    tags: ["React", "Node.js", "MongoDB", "WebSocket", "AWS", "Docker"],
+    imageUrl: codeToImpactImg,
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "HR Training Management App",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Full-stack app with React, Node.js, and MySQL. Comprehensive testing with unit, integration and end-to-end tests.",
+    tags: ["React", "Node.js", "MySQL", "TypeScript", "Jest", "Cypress"],
+    imageUrl: hrAppImg,
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Bulkify Android App",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Android bulk-buy android app in Java, integrated with an IoT smart locker using QR code scanning via Raspberry Pi.",
+    tags: ["Java", "Android", "Firebase"],
+    imageUrl: bulkifyImg,
+  },
+  {
+    title: "Electronic Game on Custom CPU",
+    description:
+      "Digital Loopin' Louie game using a custom CPU on FPGA, programmed in Assembly, with external LEDs and 7-segment displays.",
+    tags: ["Assembly", "FPGA", "Lucid"],
+    imageUrl: fpgaGameImg,
   },
 ] as const;
 
-export const projectsData = [
+export const experiencesData = [
   {
-    title: "CorpComment",
+    title: "Full Stack Developer Intern",
+    location: "Azendian Solutions, Singapore",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Developed pages with ReactJS and REST APIs using Node.js for Keppel DHCS, automating sensor data migration with Python.",
+    icon: azendianLogo, 
+    date: "Aug 2024 - Present",
   },
   {
-    title: "rmtDev",
+    title: "Operations and Workshop Management Intern",
+    location: "Stick ‘Em, Singapore",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Created educational materials and hosted STEM workshops, managed production of robotic kits, and optimized 3D printers.",
+    icon: stickEmLogo,
+    date: "May 2023 - Aug 2023",
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "Python",
+  "C",
   "JavaScript",
   "TypeScript",
+  "HTML",
+  "CSS",
   "React",
-  "Next.js",
   "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+  "Next.js",
+  "MySQL",
   "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "MongoDB",
+  "Tailwind CSS",
 ] as const;
