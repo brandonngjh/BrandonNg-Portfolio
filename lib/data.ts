@@ -45,6 +45,7 @@ export const projectsData = [
     description:
       "Full-stack MERN app with real-time data updates and concurrent processing. Deployed on AWS using Docker and GitHub Actions.",
     tags: ["React", "Node.js", "MongoDB", "WebSocket", "AWS", "Docker"],
+    icons: ["logos:react", "logos:nodejs-icon", "logos:mongodb-icon", "logos:websocket", "logos:aws", "logos:docker-icon"],
     imageUrl: codeToImpactImg,
   },
   {
@@ -52,21 +53,30 @@ export const projectsData = [
     description:
       "Full-stack app with React, Node.js, and MySQL. Comprehensive testing with unit, integration and end-to-end tests.",
     tags: ["React", "Node.js", "MySQL", "TypeScript", "Jest", "Cypress"],
+    icons: ["logos:react", "logos:nodejs-icon", "logos:mysql", "logos:typescript-icon", "logos:jest", "logos:cypress-icon"],
     imageUrl: hrAppImg,
+    githubLink: "https://github.com/brandonngjh/TrainingMgmtWebApp",
+    demoLink: "https://www.youtube.com/watch?v=4RTHZGaZaH8"
   },
   {
     title: "Bulkify Android App",
     description:
       "Android bulk-buy android app in Java, integrated with an IoT smart locker using QR code scanning via Raspberry Pi.",
     tags: ["Java", "Android", "Firebase"],
+    icons: ["logos:java", "logos:android-icon", "logos:firebase"],
     imageUrl: bulkifyImg,
+    githubLink: "https://github.com/zedithx/JavaAndroidFE",
+    demoLink: "https://www.youtube.com/watch?v=ccrcRkjByKM"
   },
   {
     title: "Electronic Game on Custom CPU",
     description:
       "Digital Loopin' Louie game using a custom CPU on FPGA, programmed in Assembly, with external LEDs and 7-segment displays.",
     tags: ["Assembly", "FPGA", "Lucid"],
+    icons: [],
     imageUrl: fpgaGameImg,
+    githubLink: "https://github.com/Marcooos05/Techno-Twirl",
+    demoLink: "https://www.youtube.com/watch?v=Nz6tMy6s1Ws"
   },
 ] as const;
 
