@@ -1,25 +1,36 @@
 "use client";
 
 import { projectsData } from "@/lib/data";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 type ProjectProps = (typeof projectsData)[number];
 
 const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
+  const controls = useAnimation();
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ["0 1", "1 1"],
   });
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  useEffect(() => {
+    return scrollYProgress.onChange((progress) => {
+      if (progress > 0.3) {
+        controls.start({ opacity: 1, scale: 1 });
+      } else {
+        controls.start({ opacity: 0, scale: 0.8 });
+      }
+    });
+  }, [scrollYProgress, controls]);
 
   return (
     <motion.div
       ref={ref}
-      style={{ scale: scaleProgress, opacity: opacityProgress }}
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={controls}
+      transition={{ duration: 0.5 }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[70rem] border border-black/5 rounded-lg overflow-hidden relative sm:h-[20rem] hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 flex flex-col sm:flex-row">
