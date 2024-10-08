@@ -12,7 +12,7 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
   const controls = useAnimation();
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1 1"],
+    offset: ["0.5 1", "1 1"],
   });
 
   useEffect(() => {
