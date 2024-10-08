@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { Icon } from "@iconify/react";
 
 const fadeInAnimationVariants = {
   initial: { opacity: 0, y: 100 },
@@ -29,14 +30,20 @@ const Skills = () => {
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="relative px-5 py-3 group"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
           >
-            {skill}
+            <Icon
+              icon={skill.icon}
+              className="text-5xl md:text-7xl transition-transform duration-300 group-hover:scale-110"
+            />
+            <span className="absolute left-1/2 transform -translate-x-1/2 mt-2 text-sm text-gray-950 dark:text-gray-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              {skill.name}
+            </span>
           </motion.li>
         ))}
       </ul>
