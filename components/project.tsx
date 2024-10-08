@@ -17,7 +17,7 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
 
   useEffect(() => {
     return scrollYProgress.onChange((progress) => {
-      if (progress > 0.3) {
+      if (progress > 0.5) {
         controls.start({ opacity: 1, scale: 1 });
       } else {
         controls.start({ opacity: 0, scale: 0.8 });
