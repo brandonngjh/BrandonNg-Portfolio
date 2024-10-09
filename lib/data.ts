@@ -53,7 +53,7 @@ export const projectsData = [
   {
     title: "HR Training Management App",
     description:
-      "Full-stack app with React, Node.js, and MySQL. Comprehensive testing with unit, integration and end-to-end tests.",
+      "Full-stack app with React, Node.js, and MySQL. Comprehensive testing with unit, integration, and end-to-end tests.",
     tags: ["React", "Node.js", "MySQL", "TypeScript", "Jest", "Cypress"],
     icons: ["logos:react", "logos:nodejs-icon", "logos:mysql", "logos:typescript-icon", "logos:jest", "logos:cypress-icon"],
     imageUrl: hrAppImg,
@@ -95,7 +95,7 @@ export const experiencesData = [
     title: "Operations and Workshop Management Intern",
     location: "Stick ‘Em, Singapore",
     description:
-      "Created educational materials and hosted STEM workshops, managed production of robotic kits, and optimized 3D printers.",
+      "Created educational materials, hosted STEM workshops, managed the production of robotic kits, and optimized 3D printers.",
     icon: stickEmLogo,
     date: "May 2023 - Aug 2023",
   },

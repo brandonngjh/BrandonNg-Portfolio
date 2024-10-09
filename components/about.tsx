@@ -21,12 +21,12 @@ export default function About() {
       <p className="mb-3">
         I&#39;m a{" "}
         <span className="font-medium">Year 3 Computer Science student</span> at
-        the Singapore University of Technology and Design (SUTD) and aspiring{" "}
+        the Singapore University of Technology and Design (SUTD) and an aspiring{" "}
         <span className="font-medium">full-stack engineer</span>, with an
         inclination toward{" "}
         <span className="font-medium">backend development</span>. While
-        backend systems are my primary focus, I also develop my{" "}
-        <span className="font-medium">frontend skills</span> and build a strong
+        backend systems are my primary focus, I am also developing my{" "}
+        <span className="font-medium">frontend skills</span> and building a strong
         foundation in <span className="font-medium">computer systems</span>.
       </p>
 
