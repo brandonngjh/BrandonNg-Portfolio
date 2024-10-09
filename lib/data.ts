@@ -43,7 +43,7 @@ export const projectsData = [
   {
     title: "GIC CODETOIMPACT Hackathon 2024",
     description:
-      "Full-stack MERN app with real-time data updates and concurrent processing. Deployed on AWS using Docker and GitHub Actions.",
+      "Full-stack MERN app developed to streamline instrument verification, limit tracking, and request submission for traders. Integrated AI-powered search, real-time data updates, and role-based authentication. Deployed on AWS with Docker and GitHub Actions.",
     tags: ["React", "Node.js", "MongoDB", "WebSocket", "AWS", "Docker"],
     icons: ["logos:react", "logos:nodejs-icon", "logos:mongodb-icon", "logos:websocket", "logos:aws", "logos:docker-icon"],
     imageUrl: codeToImpactImg,
@@ -53,7 +53,7 @@ export const projectsData = [
   {
     title: "HR Training Management App",
     description:
-      "Full-stack app with React, Node.js, and MySQL. Comprehensive testing with unit, integration, and end-to-end tests.",
+      "Comprehensive HR management platform built with React, Node.js, and MySQL to automate and streamline employee training tasks. The app achieved 85% test coverage, including unit, integration, and end-to-end tests, using Jest and Cypress.",
     tags: ["React", "Node.js", "MySQL", "TypeScript", "Jest", "Cypress"],
     icons: ["logos:react", "logos:nodejs-icon", "logos:mysql", "logos:typescript-icon", "logos:jest", "logos:cypress-icon"],
     imageUrl: hrAppImg,
@@ -63,7 +63,7 @@ export const projectsData = [
   {
     title: "Bulkify Android App",
     description:
-      "Android bulk-buy android app in Java, integrated with an IoT smart locker using QR code scanning via Raspberry Pi.",
+      "Bulkify is an Android app designed to streamline bulk purchasing for organizations, using Java and integrating an IoT smart locker for secure item retrieval via QR code. The project won 3rd place in Singtel InfoSys & Programming Awards.",
     tags: ["Java", "Android", "Firebase"],
     icons: ["logos:java", "logos:android-icon", "logos:firebase"],
     imageUrl: bulkifyImg,
@@ -73,7 +73,7 @@ export const projectsData = [
   {
     title: "Electronic Game on Custom CPU",
     description:
-      "Digital Loopin' Louie game using a custom CPU on FPGA, programmed in Assembly, with external LEDs and 7-segment displays.",
+      "A digital recreation of the Loopin' Louie game, developed in assembly on a custom RISC-based CPU using Lucid on an FPGA. The game features I/O, external LEDs and 7-segment displays and received the ISTD Outstanding Computation Structures Project Award.",
     tags: ["Assembly", "FPGA", "Lucid"],
     icons: null,
     imageUrl: fpgaGameImg,
