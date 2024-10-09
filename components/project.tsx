@@ -1,13 +1,22 @@
 "use client";
 
 import { projectsData } from "@/lib/data";
+import { Icon } from "@iconify/react";
 import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
 type ProjectProps = (typeof projectsData)[number];
 
-const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
+const Project = ({
+  title,
+  description,
+  tags,
+  icons,
+  imageUrl,
+  githubLink,
+  demoLink,
+}: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const controls = useAnimation();
   const { scrollYProgress } = useScroll({
@@ -31,24 +40,39 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
       initial={{ opacity: 0, scale: 0.8 }}
       animate={controls}
       transition={{ duration: 0.5 }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group/project mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[70rem] border border-black/5 rounded-lg overflow-hidden relative sm:h-[20rem] hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 flex flex-col sm:flex-row">
         <div className="flex-1 p-6 sm:p-10 flex flex-col justify-between order-2 sm:order-1">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <h3 className="text-2xl font-semibold mb-4">{title}</h3>
+          <div className="flex flex-wrap mb-2">
+            <p className="font-semibold text-gray-500 dark:text-white/70">
+              Made with:{" "}
+            </p>
+            <ul className="flex gap-2">
+              {icons
+                ? icons.map((icon, iconIndex) => (
+                    <div key={iconIndex} className="relative mx-1 group/logo">
+                      <Icon icon={icon} key={iconIndex} className="text-2xl" />
+                      <span className="absolute left-1/2 transform -translate-x-1/2 text-sm bg-gray-100 text-gray-800 dark:text-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 px-2 py-1 rounded opacity-0 transition-opacity duration-300 group-hover/logo:opacity-100">
+                        {tags[iconIndex]}
+                      </span>
+                    </div>
+                  ))
+                : tags.map((tag, tagIndex) => (
+                    <li
+                      key={tagIndex}
+                      className="px-2 bg-gray-200 text-gray-700 dark:bg-white/10 dark:text-white/70 rounded-md"
+                    >
+                      {tag}
+                    </li>
+                  ))}
+            </ul>
+          </div>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
+          <div className="flex sm:mt-auto"></div>
         </div>
 
         <div className="relative w-full sm:p-4 sm:w-[50%] sm:h-auto order-1 sm:order-2 flex items-center justify-center">
@@ -58,7 +82,7 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
             layout="responsive"
             objectFit="cover"
             quality={95}
-            className="rounded-t-lg shadow-l transition group-hover:scale-[1.04]"
+            className="rounded-t-lg shadow-l transition group-hover/project:scale-[1.04]"
           />
         </div>
       </section>

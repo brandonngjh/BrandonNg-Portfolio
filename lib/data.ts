@@ -47,6 +47,8 @@ export const projectsData = [
     tags: ["React", "Node.js", "MongoDB", "WebSocket", "AWS", "Docker"],
     icons: ["logos:react", "logos:nodejs-icon", "logos:mongodb-icon", "logos:websocket", "logos:aws", "logos:docker-icon"],
     imageUrl: codeToImpactImg,
+    githubLink: null,
+    demoLink: null
   },
   {
     title: "HR Training Management App",
@@ -73,7 +75,7 @@ export const projectsData = [
     description:
       "Digital Loopin' Louie game using a custom CPU on FPGA, programmed in Assembly, with external LEDs and 7-segment displays.",
     tags: ["Assembly", "FPGA", "Lucid"],
-    icons: [],
+    icons: null,
     imageUrl: fpgaGameImg,
     githubLink: "https://github.com/Marcooos05/Techno-Twirl",
     demoLink: "https://www.youtube.com/watch?v=Nz6tMy6s1Ws"
