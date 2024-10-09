@@ -5,6 +5,8 @@ import { Icon } from "@iconify/react";
 import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
+import GithubBtn from "./github-btn";
+import DemoBtn from "./demoLink";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -43,7 +45,7 @@ const Project = ({
       className="group/project mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[70rem] border border-black/5 rounded-lg overflow-hidden relative sm:h-[20rem] hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 flex flex-col sm:flex-row">
-        <div className="flex-1 p-6 sm:p-10 flex flex-col justify-between order-2 sm:order-1">
+        <div className="flex-1 p-6 sm:p-8 flex flex-col justify-between order-2 sm:order-1">
           <h3 className="text-2xl font-semibold mb-4">{title}</h3>
           <div className="flex flex-wrap mb-2">
             <p className="font-semibold text-gray-500 dark:text-white/70">
@@ -72,7 +74,10 @@ const Project = ({
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
-          <div className="flex sm:mt-auto"></div>
+          <div className="flex sm:mt-auto gap-2">
+            {demoLink && <DemoBtn demoLink={demoLink} />}
+            {githubLink && <GithubBtn githubLink={githubLink} />}
+          </div>
         </div>
 
         <div className="relative w-full sm:p-4 sm:w-[50%] sm:h-auto order-1 sm:order-2 flex items-center justify-center">
