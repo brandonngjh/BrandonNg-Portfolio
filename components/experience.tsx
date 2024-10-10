@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useCallback, useContext } from "react";
-import SectionHeading from "./section-heading";
+import SectionHeading from "./common/section-heading";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -63,8 +63,7 @@ const Experience = () => {
                 </div>
               }
               iconStyle={{
-                background:
-                  theme === "light" ? "white" : "rgb(17, 24, 39)",
+                background: theme === "light" ? "white" : "rgb(17, 24, 39)",
                 fontSize: "1.5rem",
               }}
             >

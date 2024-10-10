@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import SectionHeading from "./section-heading";
+import SectionHeading from "./common/section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
@@ -24,10 +24,11 @@ export default function About() {
         the Singapore University of Technology and Design (SUTD) and an aspiring{" "}
         <span className="font-medium">full-stack engineer</span>, with an
         inclination toward{" "}
-        <span className="font-medium">backend development</span>. While
-        backend systems are my primary focus, I am also developing my{" "}
-        <span className="font-medium">frontend skills</span> and building a strong
-        foundation in <span className="font-medium">computer systems</span>.
+        <span className="font-medium">backend development</span>. While backend
+        systems are my primary focus, I am also developing my{" "}
+        <span className="font-medium">frontend skills</span> and building a
+        strong foundation in{" "}
+        <span className="font-medium">computer systems</span>.
       </p>
 
       <p className="mb-3">
@@ -43,8 +44,8 @@ export default function About() {
         Outside of coding, I stay active through{" "}
         <span className="font-medium">football</span>,{" "}
         <span className="font-medium">gymming</span>, and{" "}
-        <span className="font-medium">dancing</span>, and I&#39;m always eager to
-        try new sports and activities.
+        <span className="font-medium">dancing</span>, and I&#39;m always eager
+        to try new sports and activities.
       </p>
     </motion.section>
   );

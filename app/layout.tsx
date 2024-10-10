@@ -1,10 +1,10 @@
-import Header from "@/components/header";
+import Header from "@/components/layout/header";
 import "./globals.css";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import React from "react";
 import { Toaster } from "react-hot-toast";
-import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
+import Footer from "@/components/layout/footer";
+import ThemeSwitch from "@/components/layout/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 
 export const metadata = {
