@@ -41,7 +41,7 @@ const Skills = () => {
               icon={skill.icon}
               className="text-5xl md:text-7xl transition-transform duration-300 group-hover:scale-110"
             />
-            <span className="absolute left-1/2 transform -translate-x-1/2 mt-2 text-sm text-gray-950 dark:text-gray-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <span className="absolute left-1/2 transform -translate-x-1/2 mt-2 text-sm text-gray-950 dark:text-gray-50 opacity-0 transition-opacity duration-300 whitespace-nowrap group-hover:opacity-100">
               {skill.name}
             </span>
           </motion.li>

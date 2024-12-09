@@ -1,10 +1,4 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import eShopMicroservicesImg from "@/public/eshopmicroservices.png";
 import codeToImpactImg from "@/public/codeToImpact.png";
 import hrAppImg from "@/public/hrApp.png";
 import bulkifyImg from "@/public/bulkify.png";
@@ -40,6 +34,17 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "EShopMicroservices",
+    description:
+      "Backend microservices e-commerce platform implemnted as part of a .NET 8 microservices course. Features include DDD, CQRS, gRPC, RabbitMQ, Redis caching, and Yarp API Gateway. Developed with clean architecture and uses Docker for containerization.",
+    tags: [".NET", "Redis", "RabbitMQ", "Docker"],
+    icons: ["logos:dotnet", "logos:redis", "logos:rabbitmq-icon", "logos:docker-icon"],
+    imageUrl: eShopMicroservicesImg,
+    githubLink: "https://github.com/brandonngjh/EShopMicroservices",
+    demoLink: null
+
+  },
   {
     title: "GIC CODETOIMPACT Hackathon 2024",
     description:
@@ -104,6 +109,7 @@ export const experiencesData = [
 export const skillsData = [
   { name: "Python", icon: "logos:python" },
   { name: "C", icon: "logos:c" },
+  { name: "C#", icon: "logos:c-sharp" },
   { name: "Java", icon: "logos:java" },
   { name: "JavaScript", icon: "logos:javascript" },
   { name: "TypeScript", icon: "logos:typescript-icon" },
@@ -112,9 +118,11 @@ export const skillsData = [
   { name: "React", icon: "logos:react" },
   { name: "Node.js", icon: "logos:nodejs-icon" },
   { name: "Next.js", icon: "logos:nextjs-icon" },
+  { name: ".NET Core", icon: "logos:dotnet" },
   { name: "MySQL", icon: "logos:mysql" },
   { name: "PostgreSQL", icon: "logos:postgresql" },
   { name: "MongoDB", icon: "logos:mongodb-icon" },
-  { name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
+  { name: "Redis", icon: "logos:redis" },
+  { name: "RabbitMQ", icon: "logos:rabbitmq-icon" },
   { name: "Docker", icon: "logos:docker-icon" },
 ] as const;
