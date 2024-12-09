@@ -23,8 +23,7 @@ export default function About() {
         <span className="font-medium">Year 3 Computer Science student</span> at
         the Singapore University of Technology and Design (SUTD) and an aspiring{" "}
         <span className="font-medium">full-stack engineer</span>, with strong
-        focus on <span className="font-medium">backend development</span>. While
-        backend systems are my primary focus, I am also developing my{" "}
+        focus on <span className="font-medium">distributed backend development</span>. I am also developing my{" "}
         <span className="font-medium">frontend skills</span> and building a
         strong foundation in{" "}
         <span className="font-medium">computer systems</span>.
