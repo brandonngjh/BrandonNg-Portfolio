@@ -1,3 +1,4 @@
+import expressoDavisImg from "@/public/expressoDavisApp.png";
 import eShopMicroservicesImg from "@/public/eshopmicroservices.png";
 import codeToImpactImg from "@/public/codeToImpact.png";
 import hrAppImg from "@/public/hrApp.png";
@@ -34,6 +35,16 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Expresso Davis",
+    description:
+      "Backend system built from scratch using Hexagonal Architecture for mentorship platform connecting UC Davis students with seniors and alumni. Features include RESTful APIs, JWT authentication, and containerized deployment.",
+    tags: ["Go", "Gin", "PostgreSQL", "JWT", "Docker"],
+    icons: ["logos:go", "logos:gin", "logos:postgresql", "logos:jwt-icon", "logos:docker-icon"],
+    imageUrl: expressoDavisImg,
+    githubLink: null,
+    demoLink: "https://www.expressodavis.org/"
+  },
   {
     title: "EShopMicroservices",
     description:
@@ -108,6 +119,7 @@ export const experiencesData = [
 
 export const skillsData = [
   { name: "Python", icon: "logos:python" },
+  { name: "Go", icon: "logos:go" },
   { name: "C", icon: "logos:c" },
   { name: "C#", icon: "logos:c-sharp" },
   { name: "Java", icon: "logos:java" },
