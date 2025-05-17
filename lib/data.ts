@@ -4,6 +4,7 @@ import codeToImpactImg from "@/public/codeToImpact.png";
 import hrAppImg from "@/public/hrApp.png";
 import bulkifyImg from "@/public/bulkify.png";
 import fpgaGameImg from "@/public/fpgaGame.png";
+import aggieworksImg from "@/public/aggieworksLogo.png";
 import azendianLogo from "@/public/azendianLogo.png"
 import stickEmLogo from "@/public/stickEmLogo.png"
 
@@ -100,16 +101,24 @@ export const projectsData = [
 
 export const experiencesData = [
   {
-    title: "Full Stack Developer Intern",
-    location: "Azendian Solutions, Singapore",
+    title: "Software Engineer",
+    location: "AggieWorks - California, USA",
     description:
-      "Developed pages with ReactJS and REST APIs using Node.js for Keppel DHCS, automating sensor data migration with Python.",
+      "Built scalable Go backend with Hexagonal Architecture, JWT auth, Docker CI, and REST APIs for UC Davis mentorship app.",
+    icon: aggieworksImg, 
+    date: "Jan 2025 - Apr 2025",
+  },
+  {
+    title: "Full Stack Developer Intern",
+    location: "Azendian Solutions - Singapore",
+    description:
+      "Developed pages with ReactJS and REST APIs using Node.js for Keppel DHCS.",
     icon: azendianLogo, 
-    date: "Aug 2024 - Present",
+    date: "Aug 2024 - Dec 2024",
   },
   {
     title: "Operations and Workshop Management Intern",
-    location: "Stick ‘Em, Singapore",
+    location: "Stick ‘Em - Singapore",
     description:
       "Created educational materials, hosted STEM workshops, managed the production of robotic kits, and optimized 3D printers.",
     icon: stickEmLogo,
